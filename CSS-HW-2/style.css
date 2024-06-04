@@ -50,12 +50,14 @@
   padding: 2%;
   height: 500px;
   background-color: #010101;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .desc {
   color: white;
   display: inline-block;
-  width: 41%;
+  width: 45%;
 }
 
 .description img {
