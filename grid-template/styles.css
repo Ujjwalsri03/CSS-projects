@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    gap: 26px;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    'one one two three '
+    'one one two three '
+    'four five five three '
+    'four five five three';
+    padding-block: 2%;
+    width: 80%;
+    height: 60%;
+    margin-inline: auto;
+}
+
+ .testimonial {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding:  30px 20px;
+    position: relative;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 22px;
+}
+
+.testimonial .content {
+    margin-left: 22px;
+}
+
+.napo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+#first{
+    grid-area: one;
+}
+#second{
+    grid-area: two;
+}
+#third{
+    grid-area: three;
+}
+#fourth{
+    grid-area: four;
+}
+#fifth{
+    grid-area: five;
+}
+
+.daniel {
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 5%;
+    grid-column: one one ;
+    background-color: #622d93;
+    color: white;
+}
+
+p {
+    margin: 10px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 33px;
+}
+
+.quote {
+    /* font-style: italic; */
+    color: #b4b3b3;
+    margin-top: 15px;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.post{
+    margin: 0;
+    font-size: 0.9em;
+    color: #bbbbbb;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1em;
+    color: azure;
+}
+
+.jonathan {
+    background-color: #3b4252;
+    color: white;
+}
+
+.kira {
+    background-color: #f9f9f9;
+}
+
+.kira .name{
+    color: #555555;
+}
+
+.kira .post{
+    color: #a7a8aa;
+}
+
+.jeanette {
+    background-color: #f9f9f9;
+}
+
+.jeanette .name{
+    color: #555555;
+}
+
+.jeanette .post{
+    color: #a7a8aa;
+}
+
+.patrick {
+    background-color: #1e202a;
+    color: white;
+}
+
+
+
+.daniel .quote, .jonathan .quote, .patrick .quote {
+    color: #dddddd;
+}
+
+.kira .quote, .jeanette .quote {
+    color: #555555;
+} 
