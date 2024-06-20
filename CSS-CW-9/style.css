@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282727;
+    padding: 1rem; /* Add some padding to avoid touching screen edges */
+}
+
+.box {
+    height: 75%;
+    width: 90%;
+    max-width: 1200px; /* Limit the max width for larger screens */
+    background: linear-gradient(to bottom, white 25%, rgb(212, 202, 17) 25%);
+    border-radius: 5px;
+    padding: 1rem; /* Add padding inside the box */
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.img, .dec {
+    flex: 1 1 45%; 
+    max-width: 100%;
+    height: auto;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+.dec {
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.dec h1, .dec p {
+    padding: 2%;
+}
+
+.dec h1 {
+    font-size: 2rem;
+}
+
+.dec p {
+    font-weight: 550;
+    font-size: 0.8rem;
+}
+
+.dec button {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.dec h3 {
+    font-size: 1rem;
+    padding-top: 2%;
+}
+
+.dec h3 span {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .img, .dec {
+        flex: 1 1 100%;
+    }
+
+    .img img {
+        width: 80%; 
+    }
+
+    .dec {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .img img {
+        width: 100%; 
+    }
+
+    .dec h1 {
+        font-size: 1.5rem; 
+    }
+
+    .dec p {
+        font-size: 0.7rem;
+    }
+
+    .dec button {
+        width: 6rem; 
+        height: 2.5rem;
+    }
+}
