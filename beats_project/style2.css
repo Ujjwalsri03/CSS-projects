@@ -99,12 +99,12 @@ h4.head {
 }
 .about {
   height: 100px;
-  width: 370px;
+  width: 400px;
   /* margin: 20px; */
 }
 p.text {
   color: #fff;
-  font-size: 13px;
+  font-size: 17px;
   padding: 10px 55px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -150,18 +150,17 @@ span {
   display: flex;
   position: absolute;
   padding: 20px 50px;
-  flex-wrap: wrap;
 }
 
 .brand img {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   height: 50px;
   width: auto;
   align-items: center;
   justify-content: space-between;
-  margin: 50px;
+  margin: 3rem;
+  padding: 0 1rem;
 }
 
 #youtube{
@@ -501,6 +500,32 @@ span {
 
 /* <<<<<<<<<<<<< media - query >>>>>>>>>>>>>>> */
 
+@media (max-width: 1024px){
+  .icons {
+    display: flex;
+    height: 150px;
+    width: auto;
+    margin: 95px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .brand {
+    display: flex;
+    position: absolute;
+    padding: 20px 50px;
+  }
+  
+  .brand img {
+    display: flex;
+    height: 50px;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+  }
+}
+
 @media (max-width: 420px) {
   .left {
     grid-template-columns: 1fr 1fr;
@@ -514,6 +539,12 @@ span {
     margin: 0;
     gap: 5px;
   }
+
+  .icons {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+  
 }
 
 @media (max-width: 320px) {
