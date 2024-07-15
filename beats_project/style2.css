@@ -68,6 +68,7 @@ margin: 30px 0px 30px 300px;
   text-align: center;
   border: none;
   scale: 1.2;
+  transition: all 0.4s linear;
 }
 
 .button {
@@ -83,6 +84,7 @@ margin: 30px 0px 30px 300px;
   background-color: red;
   scale: 1.2;
   text-align: center;
+  transition: all 0.4s linear;
 }
 img.ear {
   padding: 10px 110px;
@@ -124,6 +126,7 @@ p.text {
 .add:hover {
   scale: 1.1;
   background-color: #c61c1c;
+  transition: all 0.4s linear;
 }
 p.bag {
   color: #fff;
